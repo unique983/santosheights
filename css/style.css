@@ -1,0 +1,693 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Tipografias descargadas */
+@font-face{
+    font-family: "Ethnocentric Rg";
+    src: url(../fonts/Font_ethnocentric/ethnocentric_rg.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    
+}
+header{
+    height: 100vh;
+    background: url(../img/1_fondo_banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(24, 42, 138, 0.50);
+    backdrop-filter: blur(10px); 
+    position: fixed;
+    padding-top: 1rem;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+}
+.menu a:hover{
+    color: #FF4D00;
+    transition: .6s;
+}
+.menu-toggle,
+.menu-icon{
+    display: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+}
+.fecha{
+    border-bottom: 1px double #fff;
+}
+.fecha:hover{
+    border-color: #FF4D00;
+} 
+.info-banner{
+    padding-top: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-contenido{
+    margin-top: 4rem;
+    max-width: 488px;
+    width: 100%;
+    text-align: center;
+}
+.banner-contenido h1{
+    font-family: "Ethnocentric Rg";
+    font-size: 2.5rem;
+    color: #fff;
+}
+.banner-contenido p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 4rem 0;
+}
+.btn{ 
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem 2.8rem;
+    background: #2f3b70;
+    border-radius: 1rem;
+    border: 2px solid #fff;
+}
+.btn:hover{
+    background: linear-gradient(90deg, #FF4D00 0.01%, rgba(24, 42, 138, 0.50) 155.28%);
+    transition: .9s;
+}
+/* Inicio Main */
+.quienessomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5rem 15rem;
+    margin: auto;
+    background-color: #1C6AA3;
+}
+.qs-info{
+    color: #fff;
+}
+.qs-texto h2{
+    font-family:'Ethnocentric Rg', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+.qs-texto p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+.image-gallery {
+    display: flex;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: 60rem;
+    flex-wrap: wrap;
+}
+.image-row img {
+    display: flex;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    flex: 1;
+}
+/* Inicio seccion rutas */
+.rutas{
+    /* display: flex; */
+    height: auto;
+    padding: 5rem 15rem;
+    background: #182a8a;
+    color: #fff;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.rutas h2{
+    font-family:'Ethnocentric Rg', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.card{
+    text-align: center;
+    width: 25rem;
+    height: 44rem;
+    background: #1C6AA3;
+}
+.card h3{
+    font-family:'Ethnocentric Rg', sans-serif;
+    font-size: 1.8rem;
+    padding: 4rem 0;
+}
+.card img{
+    width: 25rem;
+    margin-bottom: 4rem;
+}
+/* Fin de la seccion rutas */
+/* Inicio de seccion recursos */
+.recursos{
+    background: #243698;
+    height: auto;
+    padding: 5rem 15rem;
+    color: #fff;
+}
+.recursos-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recursos-info h3{
+    margin-top: 1.5rem;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.8rem;
+}
+.boxs{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.recursos h2{
+    font-family:'Ethnocentric Rg', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+/* Calendario */
+.calendario{
+    display: flex;
+    flex-direction: column;
+    background: #182a8a;
+    color: #fff;
+    height: auto;
+    padding: 5rem 15rem;
+}
+.calendario h2{
+    font-family: 'Ethnocentric Rg', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.finde{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-finde{
+    max-width: 25rem;
+    margin: 2rem;
+    background: #827f7f;
+    padding: 3rem 1rem;
+    border: 3px solid;
+    border-radius: 1rem;
+}
+.text-finde ul li{
+    list-style: none;
+}
+.text-finde h3{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.text-finde p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+/* Paisajes */
+.paisajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1C6AA3;
+    height: auto;
+    padding: 5rem 15rem;
+    color: #fff;
+}
+.paisajes h2{
+    font-family: 'Ethnocentric Rg', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fotos img{
+    border-radius: .8rem;
+    border: #fff solid 5px;
+    margin: 1rem 1rem;
+}
+/* Final seccion paisajes */
+/* Inicio seccion uniforme */
+.uniforme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 5rem 15rem;
+    background: #182a8a;
+}
+.uniforme h2{
+    font-family: 'Ethnocentric Rg', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    color: #fff;
+}
+.Hombre{
+    margin-bottom: 3rem;
+}
+.hombre-shirt,
+.mujer-shirt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* FORM */
+.formulario {
+    padding: 7rem 15rem;
+    font-family: 'Ubuntu',sans-serif;
+    background: url(../img/Form-fondo-1.png) center no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+.container-formulario {
+    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fffdfd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #2a2a2a;
+}
+.container-formulario h3{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    color: #182a8a;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #182a8a;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #FF4D00;
+    outline: none;
+}
+
+button {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.hidden {
+    display: none;
+}
+
+#success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f3f3f3;
+    color: #000;
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+}
+/* Patrocinadores */
+.patrocinadores{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.patrocinadores img{
+    margin: 0 3rem;
+}
+/* Final de patrocinadores */
+/* Footer */
+footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 4rem 15rem;
+        background: #343131;
+        color: #fff;
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+.redes{
+    margin: 2rem 0;
+}
+.redes img{
+    margin: 0 1rem;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* media querys 1 */
+
+@media  screen and (max-width: 992px) {
+
+    .menu-toggle {
+        display: none; /* Oculto por defecto */
+    }
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        color: #fff;
+        display: block; /* Mostrar en pantallas pequeñas */
+    }
+    .logo img{
+        width: 12rem;
+    }
+    .menu-open {
+        display: block;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0 ;
+        width: 40%;
+        height: 100vh;
+        background: #1C6AA3;
+        z-index: 100;
+        padding-top: 5rem;
+    }
+    .menu ul {
+        list-style-type: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-toggle:checked + .menu-icon .menu-open {
+        display: none;
+    }
+
+    .menu-toggle:checked + .menu-icon .menu-close {
+        display: block;
+    }
+
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+    .quienessomos{
+        padding: 4rem 1.5rem;
+    }
+    .quienessomos p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .image-row {
+        max-width: 50rem;
+    }
+    .image-row img {
+        width: 200px;
+    }
+    .calendario{
+        padding: 4rem 1.5rem;
+    }
+    .text-finde p{
+        font-size: 1.1rem;
+    }
+    .formulario{
+        padding: 4rem 1.1rem;
+    }
+    footer{
+        padding: 2rem 2rem;
+    }
+    .footer-text p{
+        font-size: 1.1rem;
+    }
+}
+@media  screen and (max-width: 768px){
+    .menu a{
+        font-size: 1.2rem;
+    }
+    .logo img{
+        width: 12rem;
+    }
+    .banner-contenido{
+        padding: 0 4rem;
+    }
+    .banner-contenido h1{
+        font-size: 2rem;
+    }
+    .quienessomos{
+        padding: 2rem 4rem;
+    }
+    .quienessomos h2{
+        font-size: 1.5rem;
+    }
+    
+    .quienessomos p{
+        font-size: 1rem;
+    }
+
+    .rutas h2{
+        font-size: 1.5rem;
+    }
+    .rutas h3{
+        font-size: 1.3rem;
+    }
+    .rutas{
+        padding: 2rem 4rem;
+    }
+    .recursos{
+        padding: 2rem 4rem;
+    }
+    .recursos h2{
+        font-size: 1.5rem;
+    }
+    .recursos h3{
+        font-size: 1rem;
+    }
+    .recursos img{
+        width: 9rem;
+    }
+    .calendario{
+        padding: 2rem 4rem;
+    }
+    .calendario h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-finde h3{
+        font-size: 1.3rem;
+    }
+    .text-finde p{
+        font-size: 1rem;
+    }
+    .paisajes{
+        padding: 2rem 4rem;
+
+    }
+    .paisajes h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .fotos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .fotos img{
+        border-radius: .8rem;
+        border: #fff solid 5px;
+        margin: .5rem;
+    }
+    .uniforme{
+        padding: 2rem 4rem;
+        
+    }
+    .uniforme h2{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .formulario{
+        padding: 2rem 4rem;
+    }
+    .patrocinadores{
+        padding-top: .9rem;
+    }
+    .footer{
+        padding: 2rem 4rem;
+    }
+    .footer-text p{
+        font-size: 1rem;
+    }
+}
+@media  screen and (max-width: 490px){
+    .info-banner{
+        padding-top: 18rem;
+    }
+    .menu a{
+        font-size: .8rem;
+    }
+    .rutas{
+        padding: 2rem 3rem;
+    }
+    .rutas h2{
+        font-family:'Ethnocentric Rg', sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .card{
+        text-align: center;
+        width: 20rem;
+        height: 30rem;
+        background: #1C6AA3;
+    }
+    .card h3{
+        font-family:'Ethnocentric Rg', sans-serif;
+        font-size: 1.8rem;
+        padding: 2rem 0;
+    }
+    .card img{
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+    .calendario{
+        padding: 2rem 2rem;
+    }
+    .calendario h2{
+        margin-bottom: 1rem;
+    }
+    .fotos img{
+        width: 180px;
+        height: 225px;
+    }
+    .formulario{
+        padding: 2rem 2rem;
+    }
+    .container-formulario button{
+        font-size: .9rem;
+    }
+    .patrocinadores img{
+        width: 3.5rem;
+    }
+    footer{
+        padding: 2rem 2rem;
+        font-size: 1rem;
+    }
+    .footer-text p{
+        font-size:.8rem;
+    }
+    .redes{
+    margin: 2rem 0;
+    }
+    .redes img{
+    margin: 0 1rem;
+    width: 2rem;
+    }
+    .footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+}
+@media  screen and (max-width: 400px){
+    .info-banner{
+        padding-top: 8rem;
+    }
+    .footer-text{
+        font-size: .6rem;
+    }
+}
